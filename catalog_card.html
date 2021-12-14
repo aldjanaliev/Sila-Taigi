@@ -16,13 +16,13 @@
 			<div class="container">
 				<div class="head">
 					<div class="main_logo-wrap">
-						<a class="main_logo" href="index.html"><img src="img/logo_black.png" alt=""></a>
+						<a class="main_logo" href="#"><img src="img/logo_black.png" alt=""></a>
 					</div>
 					<nav class="main_nav menu-burger">
 						<ul class="main_list">
 							<li class="main_list-item"><a class="main_list-link" href="about.html">О компании</a></li>
-							<li class="main_list-item"><a class="main_list-link" href="catalog.html">Каталог</a></li>
-							<li class="main_list-item"><a class="main_list-link main_list-link__active" href="news.html">Новости</a></li>
+							<li class="main_list-item"><a class="main_list-link main_list-link__active" href="catalog.html">Каталог</a></li>
+							<li class="main_list-item"><a class="main_list-link" href="news.html">Новости</a></li>
 							<li class="main_list-item"><a class="main_list-link" href="contacts.html">Контакты</a></li>
 						</ul>
 					</nav>
@@ -55,25 +55,72 @@
 	<div class="page_nav">
 		<div class="container">
 			<div class="page_nav-links">
-				<a class="page_nav-link" href="index.html">Сила Тайги<i class="page_nav-arrow"></i></a>
-				<a class="page_nav-link" href="news.html">Новости<i class="page_nav-arrow"></i></a>
-				<span class="page_nav-link">Новость 1</span>
+				<a class="page_nav-link" href="index.html">Сила Тайги <i class="page_nav-arrow"></i></a>
+				<a class="page_nav-link" href="catalog.html">Каталог <i class="page_nav-arrow"></i></a>
+				<span class="page_nav-link">Иван-чай (листовой без добавок)</span>
 			</div>
 		</div>
 	</div>
 
-	<section class="section news_article-in page_in border_bottom">
+	<section class="section catalog-card_in page_in border_bottom">
 		<div class="container">
-			<div class="news_article">
-				<div class="news_article-img-wrap">
-					<img class="news_article-img" src="img/news_article-1.jpg" alt="">
+			<h3 class="section_title left_title">Иван-чай<span class="section_subtitle">(листовой без добавок)</span></h3>
+			<div class="catalog-card_in-wrap">
+				<div class="catalog-card_in-body">
+					<div class="catalog-card_body">
+						<div class="catalog-card_body-img-wrap">
+							<img src="img/catalog_card.jpg" class="catalog-card_body-img" alt="">
+						</div>
+						<div class="catalog-card_body-order">
+							<div class="catalog-card_order-weight-wrap">
+								<span class="catalog-card_order-weight">Выбрать вес:</span>
+								<input class="catalog-order-check" type="checkbox" id="kg-05" name="weight">
+								<label class="catalog-order-lab"  for="kg-05">0,5 кг</label>
+								<input class="catalog-order-check"  type="checkbox" id="kg-07" name="weight">
+								<label class="catalog-order-lab"  for="kg-07">0,7 кг</label>
+								<input class="catalog-order-check"  type="checkbox" id="kg-1" name="weight">
+								<label class="catalog-order-lab"  for="kg-1">1 кг</label>
+							</div>
+							<div class="catalog-card_order-amount-wrap">
+								<span class="catalog-card_order-amount-title">Количество:</span>
+								<div class="catalog-card_order-amount">
+									<button class="order_couner" data-direction="minus">-</button>
+									<input type="text" value="0" class="order_counter-value">
+									<button class="order_couner" data-direction="plus">+</button>
+								</div>
+							</div>
+							<div class="catalog-card_order-total-wrap">
+								<span class="catalog-card_order-total">270Р</span>
+								<button class="btn">В корзину</button>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-card_body-txt-wrap">
+						<span class="catalog-card_body-txt-title border_title">Описание</span>
+						<p class="catalog-card_body-txt">Вкусный натуральный липовый мед в порционном деревянном бочонке 650 грамм, оригинально запечатанный воском. Такой нежный в обращении продукт как мед прекрасно сохраняет свои полезные свойства при хранении в упаковке из стекла или, что гораздо лучше, дерева. Деревянный бочонок с медом замечательно смотрится на столе во время семейного чаепития. Очень примечательный, неожиданный, а главное - полезный подарок или сувенир.</p>
+					</div>
 				</div>
-				<div class="news_article-content">
-					<h4 class="news_article-title border_title">Что подарить на Новый год?</h4>
-					<p class="news_article-txt news_article-txt__main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-					<p class="news_article-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-					<p class="news_article-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-					<p class="news_article-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+				<div class="catalog-card_in-side">
+					<div class="catalog-card_in-same-wrap">
+						<span class="catalog-card_in-same-title">Похожие</span>
+						<div class="catalog-card_in-same-flex">
+							<div class="catalog-card_in-same">
+								<div class="catalog-card_in-same-img-wrap">
+									<img src="img/catalog_card-1.jpg" alt="" class="catalog-card_in-same-img">
+								</div>
+								<span class="catalog-card_in-same-name">Загадка севера</span>
+								<a href="" class="btn-more">Подробнее</a>
+							</div>
+							<div class="catalog-card_in-same">
+								<div class="catalog-card_in-same-img-wrap">
+									<img src="img/catalog_card-1.jpg" alt="" class="catalog-card_in-same-img">
+								</div>
+								<span class="catalog-card_in-same-name">Кедровый</span>
+								<a href="" class="btn-more">Подробнее</a>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
