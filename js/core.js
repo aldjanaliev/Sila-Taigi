@@ -32,6 +32,8 @@ $(document).ready(function(){
         $(this).toggleClass('burger-active');
         $('.menu-burger').slideToggle(300);
       })
+
+
 			$('.catalog_burger').on('click', function(event){
         $(this).toggleClass('catalog_burger-active');
         $('.catalog_in-nav-wrap').slideToggle(300);
@@ -65,4 +67,63 @@ $(document).ready(function(){
 				})
 			})
 
+			
+			
+
 });
+
+
+let selector = document.querySelectorAll('input[type="tel"]');
+	let im = new Inputmask('+7 (999) 999-99-99');
+	im.mask(selector);
+
+	const validation = new JustValidate('#form');
+
+	validation
+		.addField('#name', [
+			{
+				rule: 'required',
+				errorMessage: 'Введите имя!',
+			},
+			{
+				rule: 'minLength',
+				value: 3,
+				errorMessage: 'Слишком короткое имя!',
+			},
+			{
+				rule: 'maxLength',
+				value: 30,
+				errorMessage: 'Слишком длинное имя!',
+			},
+		])
+		.addField('#tel', [
+			{
+				rule: 'required',
+				errorMessage: 'Введите номер телефона!',
+			},
+			{
+				rule: 'minLength',
+				value: 12,
+				errorMessage: 'Введите корректный номер!',
+			},
+		])
+		.addField('#email', [
+			{
+				rule: 'required',
+				errorMessage: 'Введите адрес почты!',
+			},
+			{
+				rule: 'email',
+				errorMessage: 'Неверный адрес почты!',
+			},
+		]);
+
+// let validateForms = function(selector, rules, successModal, yaGoal){
+// 	new window.justValidate(selector, {
+// 		rules: rules,
+// 		submitHandler: function(form){
+
+// 		}
+// 	})
+// }
+// validateForms('#formValidation', {email: {required: true, email: true}, tel:{required: true}}, '.thanks-popup')
