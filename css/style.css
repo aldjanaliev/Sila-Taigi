@@ -140,13 +140,13 @@ header{
 }
 .burger-active i{
 	width: 45px;
-	transform: rotate(34deg);
-	top: 14px;
+	transform: rotate(45deg);
+	top: 13px;
 	left: -3px;
 }
 .burger-active i::after {
 	width: 45px;
-	transform: rotate(-68deg);
+	transform: rotate(-90deg);
 	top: 0;
 }
 .burger-active i::before {
@@ -394,6 +394,7 @@ header{
 .form_input-wrap {
   max-width: 418px;
   width: 31%;
+	position: relative;
 }
 .form_input {
   border: 1px solid #dedede;
@@ -423,6 +424,12 @@ header{
   color: #bf273a;
   display: inline-block;
   border-bottom: 1px solid #bf273a;
+}
+.just-validate-error-label{
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	font-size: 14px;
 }
 
 footer {
