@@ -101,24 +101,24 @@
 			<h3 class="form_title section_title">Не нашли то, что<span>искали?</span></h3>
 			<p class="form_desc">Заполните форму и мы свяжемся с вами в ближейшее время</p>
 			<div class="form-wrap">
-				<form action="#">
+				<form action="#" name="formValidation" id="form">
 					<div class="form_in">
 						<div class="form_inputs">
 							<div class="form_input-wrap">
-								<input class="form_input" type="text" placeholder="Имя*" required>
+								<input class="form_input" id="name" type="text" placeholder="Имя*" data-validate-field="name">
 							</div>
 							<div class="form_input-wrap">
-								<input class="form_input" type="tel" placeholder="Телефон*" pattern="7[0-9]{10}" required>
+								<input class="form_input" id="tel" type="tel" placeholder="Телефон*" data-validate-field="tel">
 							</div>
 							<div class="form_input-wrap">
-								<input class="form_input" type="email" placeholder="Email" required>
+								<input class="form_input" id="email" type="email" placeholder="Email" data-validate-field="email">
 							</div>
 						</div>
 						<div class="form_textarea-wrap">
 							<textarea class="form_textarea"  placeholder="Ваше сообщение"></textarea>
 						</div>
 						<div class="btn-wrap">
-							<button class="btn">Отправить</button>
+							<button class="btn" type="submit">Отправить</button>
 						</div>
 						<div class="form_info-wrap">
 							<span class="from_info">* - поля, обязательные для заполнения</span>
@@ -134,7 +134,7 @@
 		<div class="container">
 			<div class="footer">
 				<div class="main_logo-wrap">
-					<a class="main_logo" href="#"><img src="img/logo_footer.png" alt=""></a>
+					<a class="main_logo" href="index.html"><img src="img/logo_footer.png" alt=""></a>
 				</div>
 				<nav class="main_nav">
 					<ul class="main_list">
@@ -172,6 +172,8 @@
 	<script src="libs/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="libs/fancybox.min.js"></script>
 	<script type="text/javascript" src="libs/slick.min.js"></script>
+	<script type="text/javascript" src="libs/inputmask.min.js"></script>
+	<script type="text/javascript" src="libs/justvalidate.min.js"></script>
 	<script src="js/core.js"></script>
 
 </body>
